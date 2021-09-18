@@ -49,5 +49,3 @@ Without writing any code, just by working with the Data Viewer, try to answer th
   4. How many tests overall were positive? How many positive tests were there in the first 30 days of the pandemic? (Hint: look at the Filter button)
   
   The `result` column holds that information. We can apply a filter to that column to only show us rows where the value in the `result` column is "positive". Click on Filter and enter "positive" in the text field that appears below the `result` header. You will now see that the bottom line of the data viewer reads "Showing 1 to [some number] of 865 entries, 17 total columns (filtered from 15,524 total entries)". So there were 865 positive tests, out of 15,524 total.
-
-When you are done, don't forget to click "yes" or give us a "thumbs up" in the Participants window in Zoom!
