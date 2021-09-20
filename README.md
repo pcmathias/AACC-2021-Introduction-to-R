@@ -24,7 +24,8 @@ Please make every effort to arrive to the course room 5-10 minutes early to conf
 
 1. Course content will be pre-loaded into the RStudio Cloud instance, so we will cover how to access it at the beginning of the course
 2. The content is available at [our course github page](https://github.com/pcmathias/AACC-2021-Introduction-to-R) and can be downloaded from there as well.
-3. We will be running a "hybrid" course: one instructor will be on site and another instructor will be participating over Zoom. By signing into Zoom, you will be able to ask questions of the remote instructor while the in person instructor is teaching.
+3. If you have a tablet you may find it useful to bring and use that to act as a second screen: you work on your laptop to complete exercises and use your tablet to review the lesson slides that were just covered.
+4. We will be running a "hybrid" course: one instructor will be on site and another instructor will be participating over Zoom. By signing into Zoom, you will be able to ask questions of the remote instructor while the in person instructor is teaching. 
 
 ## Installing RStudio onto your own computer
 
