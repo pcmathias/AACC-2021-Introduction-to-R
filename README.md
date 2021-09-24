@@ -14,7 +14,7 @@ For the best experience, please have the following ready before the workshop beg
 
 - A laptop with WiFi is required to fully participate in this interactive course.
 - Please sign up for a free RStudio Cloud account (or link it to one of your existing accounts) [here](https://rstudio.cloud/).
-- Install the latest version of [Zoom](https://zoom.us/download).
+- Please sign up for a free Slack account [here](https://slack.com/) and join the slack channel invite link sent in the course welcome email.
 - Install the latest version of [Google Chrome](https://www.google.com/chrome/) as some [older browsers](https://support.rstudio.com/hc/en-us/articles/227449447-Supported-browsers-for-RStudio-Connect) may not be compatible with the RStudio application).
 - Please complete the following survey so we can better understand your R experience and what you want out of the course: [AACC R Workshop Participant Survey](https://forms.gle/KwxToYefigwYS9MP6).
 
@@ -25,7 +25,7 @@ Please make every effort to arrive to the course room 5-10 minutes early to conf
 1. Course content will be pre-loaded into the RStudio Cloud instance, so we will cover how to access it at the beginning of the course
 2. The content is available at [our course github page](https://github.com/pcmathias/AACC-2021-Introduction-to-R) and can be downloaded from there as well.
 3. If you have a tablet you may find it useful to bring and use that to act as a second screen: you work on your laptop to complete exercises and use your tablet to review the lesson slides that were just covered.
-4. We will be running a "hybrid" course: one instructor will be on site and another instructor will be participating over Zoom. By signing into Zoom, you will be able to ask questions of the remote instructor while the in person instructor is teaching. 
+4. We will be running a "hybrid" course: one instructor will be on site and another instructor will be participating over Zoom. We plan to use the slack channel so the non-presenting instructor can help to answer questions while the presenting instructor is delivering course content.
 
 ## Installing RStudio onto your own computer
 
