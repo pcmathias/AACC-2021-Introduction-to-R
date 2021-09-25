@@ -191,3 +191,55 @@ ggplot(data = tmp) +
 
 ```
 
+## What else
+
+### Test for association
+```{r}
+covid_testing_2 <- covid_testing %>%
+  mutate(payor_group_fac = case_when(
+				is.na(payor_group) 			     ~ "unassigned",
+				payor_group %in% c("charity care", 
+						    "medical assistance", 
+						    "self pay", 
+					            "other") 		     ~ "other",
+									TRUE ~ payor_group)
+  ) %>%
+  filter(result %in% c("positive", "negative"))
+```
+
+```{r}
+# Generate counts
+tmp_table_tall <- covid_testing_2 %>% 
+  group_by(payor_group_fac, result) %>%
+  summarize(n = n()) %>%
+  ungroup()
+tmp_table_tall
+
+# Pivot from tall to wide table
+tmp_table_wide <- tmp_table_tall %>%
+  spread(key = "result", value = "n")
+tmp_table_wide
+```
+
+```{r}
+# Hypergeometric test for association
+tmp_table_wide %>%
+  select(-payor_group_fac) %>%
+  fisher.test(simulate.p.value = T)
+```
+
+### Logistic Regression
+```{r}
+tmp <- covid_testing_2 %>%
+  filter(payor_group_fac %in% c("commercial", "government")) %>%
+  mutate(result_fac = factor(result, 
+                             levels=c("negative", "positive"), 
+                             ordered=T),
+         payor_group_fac = (payor_group == "government"))
+tmp_fit <- glm(result_fac ~ payor_group_fac + age,  	# model formula
+               data = tmp,                           	# dataset
+               family = "binomial"                    # type of model
+  )
+summary(tmp_fit)
+exp(coefficients(tmp_fit))  					                # odds
+```
