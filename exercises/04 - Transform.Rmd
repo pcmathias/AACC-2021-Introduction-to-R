@@ -116,6 +116,7 @@ picu_outliers <- covid_testing %>%
   filter(________) %>% # filter to the clinic with the name "picu"
   mutate(________) %>% # calculate total turnaround time
   filter(________)    # filter only turnaround time greater than 10 hours
+picu_outliers
 ```
 
 ## Pipe Bonus Challenge (only if you have time)
