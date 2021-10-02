@@ -61,8 +61,7 @@ covid_testing_3c
 
 ```{r}
 # The following code creates a data frame with a new column called c_r_tat_mins which contains the collect to receive TAT quantified in minutes.
-covid_testing %>%
-	mutate(c_r_tat_mins = col_rec_tat*60)
+mutate(covid_testing, c_r_tat_mins = col_rec_tat*60)
 ```
 
 ## Your Turn 3
@@ -70,15 +69,13 @@ Create a new column using the mutate() function that contains the total TAT.
 Hint: The total TAT is the sum of `col_rec_tat` and `rec_ver_tat`
 
 ```{r Your Turn 6, eval=FALSE}
-covid_testing %>%
-	mutate(total_tat = _________)
+mutate(covid_testing, total_tat = _________)
 ```
 
 ## Replace a column with `mutate()`
 
 ```{r}
-covid_testing %>%
-	mutate(mrn = as.character(mrn))
+mutate(covid_testing, mrn = as.character(mrn))
 ```
 
 # Steps and the pipe
